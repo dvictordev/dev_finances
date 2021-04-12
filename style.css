@@ -10,12 +10,22 @@
 }
 
 body {
-  background: #f0f2f5;
+  background: rgb(231, 231, 231);
 }
 
 .container {
   width: min(90vw, 800px);
   margin: auto;
+}
+
+.sr-only {
+  width: 1px;
+  padding: -1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
 }
 /* =========== titles =========== */
 h2 {
@@ -54,6 +64,13 @@ header {
 
 /* ========== cards ============= */
 .card {
+  float: left;
+  margin-left: 1rem;
+}
+.card:first-child {
+  margin-left: 0;
+}
+.card {
   background: white;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
@@ -75,6 +92,13 @@ header {
   background: #49aa26;
   color: white;
 }
+
+.new-transaction a {
+  text-decoration: none;
+  color: #49aa26;
+  margin-left: 1rem;
+  font-weight: normal;
+}
 /* ========== cards ============= */
 
 /* ========== table ============= */
@@ -90,7 +114,7 @@ table th {
   font-weight: normal;
   padding: 1rem 2rem;
   text-align: left;
-  color: #969cb3;
+  color: var(--color-dark);
 }
 
 table thead tr th:first-child,
@@ -110,12 +134,22 @@ table tr:hover {
   opacity: 1;
 }
 
+.expenses {
+  color: red;
+}
+
+.incomes {
+  color: green;
+}
+
 /* ========== table ============= */
 
 /*  ========= footer ============ */
 
 footer {
+  padding: 5rem;
   text-align: center;
+  color: var(--color-dark);
 }
 
 /*  ========= footer ============ */
