@@ -1,3 +1,7 @@
-primeiro commit 
+Um dos meus primeiros projetos
 
-i now how to push and pull modifications to my github.
+Desenvolvido durante a maratona discover da rocketseat.
+
+um sistema de finan√a para controlar os gastos do m√s ou da semana, ou de quando voce quiser.
+
+ainda em desenvolvimento!
