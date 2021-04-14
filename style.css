@@ -41,12 +41,12 @@ h2 {
 header {
   background: #2d4a22;
   padding: 3rem 0 10rem;
+  text-align: center;
 }
 
 #logo {
   color: #fff;
   text-align: center;
-  font-weight: 100;
 }
 
 /* ========== header ============ */
@@ -64,7 +64,6 @@ header {
 
 /* ========== cards ============= */
 .card {
-  float: left;
   margin-left: 1rem;
 }
 .card:first-child {
@@ -74,13 +73,19 @@ header {
   background: white;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
+
   margin-bottom: 2rem;
-  color: var(--color-dark);
+
+  color: var(--dark-blue);
 }
 
 .card h3 {
   font-size: 1rem;
   font-weight: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card p {
@@ -98,6 +103,15 @@ header {
   color: #49aa26;
   margin-left: 1rem;
   font-weight: normal;
+}
+.new-transaction h3 {
+  display: flex;
+  vertical-align: center;
+}
+.new-transaction img {
+  height: 15px;
+  width: 15px;
+  margin-right: -15px;
 }
 /* ========== cards ============= */
 
